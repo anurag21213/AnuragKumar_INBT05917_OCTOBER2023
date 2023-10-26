@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:ital,wght@1,300&family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;1,300&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.hero{
+    height: 70vh;
+    width: 100vw;
+    background-image: url("./images/backimg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.hero h3{
+    margin: 22px 0;
+}
+.searchbox{
+    /* border: 2px solid red; */
+    width:40%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+.searchbox  .input{
+    width: 70%;
+    height: 100%;  
+}
+.searchbox  .input input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 12px;
+}
+.searchbox .button{
+    width: 20%;
+    height: 100%;
+    border: none;
+
+}
+.searchbox input::placeholder{
+   padding-left:12px ;
+}
+
+.container{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 7%;
+}
+.con{
+    width:90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 250px;
+    height: 250px;
+    margin: 22px;
+    border-radius: 10px;
+}
+.cards img{
+    width:100%;
+    height:100%;
+}
+@media (max-width:1000px) {
+    .searchbox{
+        width: 80%;
+    }
+    @media (max-width:543px) {
+       .searchbox{
+        flex-direction: column;
+        margin: 22px 0;
+       }
+       .searchbox .input{
+
+        margin-bottom: 18px;
+        width: 80%;
+        /* height: 45px; */
+       }
+       .searchbox .button{
+        margin-bottom: 18px ;
+       }
+    }
+}
